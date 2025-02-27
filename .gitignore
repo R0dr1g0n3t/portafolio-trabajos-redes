@@ -1,5 +1,7 @@
+#Archivos de Terraform que no deben subirse a la pagina de GitHub
 .terraform/
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
 awscliv2.zip
+terraform.tfvars
