@@ -1,20 +1,9 @@
-🚀 Terraform AWS - Proyecto de Infraestructura como Código (IaC)
+Este portafolio no sólo es un portafolio para exponer mis progresos y como trabajo en la plataforma Terraform unido con una instancia EC2 en AWS, sino también para aprender un poco de GitHub, ya que este es mi primer paso trabajando personalmente en esta plataforma, así que lo siento si me equivoco en algo. Jajaja.
+También hago este portafolio ya que, si alguien también tiene problemas al empezar en Terraform
 
-📌 Descripción
-
-Este repositorio contiene un proyecto de Terraform para desplegar una instancia EC2 en AWS.
-
-El objetivo es demostrar el uso de Terraform para gestionar infraestructura en la nube, configurando un proveedor, definiendo recursos y aplicando cambios de forma automatizada.
-
-🛠️ Requisitos
-
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
-
+Para todo esto necesitamos tener instalado:
 Terraform
-
-AWS CLI
-
-Una cuenta en AWS
+AWS CLI y tener una cuenta activa de AWS
 
 📂 Estructura del Proyecto
 
@@ -26,28 +15,22 @@ proyecto-terraform/
 
 1️⃣ Clonar el Repositorio
 
-git clone https://github.com/tu-usuario/proyecto-terraform.git
+git clone https://github.com/R0dr1g0n3t/proyecto-terraform.git
 cd proyecto-terraform
 
 2️⃣ Configurar AWS CLI
 
-Ejecuta:
+      aws configure
 
-aws configure
-
-Ingresa:
-
-AWS Access Key ID
-
-AWS Secret Access Key
-
-Default region name (Ejemplo: us-east-1)
-
-Output format (json, o déjalo vacío)
+Al hacer este comando te pedirá:
+AWS Access Key ID o ID de clave de acceso
+AWS Secret Access Key o Clave de acceso secreta 
+Default region name: dale enter nomas
+Output format: enter nomas
 
 3️⃣ Verificar credenciales
 
-aws sts get-caller-identity
+      aws sts get-caller-identity
 
 Debe devolver información sobre tu cuenta de AWS.
 
@@ -56,6 +39,8 @@ Debe devolver información sobre tu cuenta de AWS.
 1️⃣ Crear el archivo main.tf
 
 Crea un archivo main.tf con el siguiente contenido:
+
+
 
 provider "aws" {
   region = "us-east-1"
@@ -72,19 +57,19 @@ resource "aws_instance" "mi_ec2" {
 
 2️⃣ Inicializar Terraform
 
-terraform init
+        terraform init
 
 Esto descargará los plugins necesarios.
 
 3️⃣ Planificar la Infraestructura
 
-terraform plan
+        terraform plan
 
 Muestra los cambios que se aplicarán.
 
 4️⃣ Aplicar la Infraestructura
 
-terraform apply
+        terraform apply
 
 Confirma con yes y Terraform creará la instancia EC2 en AWS.
 
@@ -101,16 +86,3 @@ Si quieres eliminar la instancia EC2:
 terraform destroy
 
 Confirma con yes para eliminar los recursos.
-
-🚀 Próximos Pasos
-
-Ahora que Terraform está funcionando, podemos mejorar el proyecto:
-✅ Usar variables para hacer la configuración más flexible.
-✅ Crear módulos para reutilizar código.
-✅ Configurar estado remoto para trabajar en equipo.
-✅ Integrarlo con CI/CD para automatizar despliegues.
-
-📜 Licencia
-
-Este proyecto es de código abierto y puedes usarlo para aprender o mejorar tus propias implementaciones.
-
