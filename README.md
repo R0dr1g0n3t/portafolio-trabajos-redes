@@ -1,15 +1,7 @@
 Este portafolio no sólo es un portafolio para exponer mis progresos y como trabajo en la plataforma Terraform unido con una instancia EC2 en AWS, sino también para aprender un poco de GitHub, ya que este es mi primer paso trabajando personalmente en esta plataforma, así que lo siento si me equivoco en algo. Jajaja.
 También hago este portafolio ya que, si alguien también tiene problemas al empezar en Terraform
 
-Para todo esto necesitamos tener instalado:
-Terraform
-AWS CLI y tener una cuenta activa de AWS
-
-📂 Estructura del Proyecto
-
-proyecto-terraform/
-│── main.tf           # Archivo principal de Terraform
-│── README.md         # Documentación del proyecto
+Esto es el paso a paso de como instalar, configurar y usar Terraform por medio de una instancia EC2 en AWS
 
 ⚙️ Instalación y Configuración
 
@@ -42,18 +34,18 @@ Crea un archivo main.tf con el siguiente contenido:
 
 
 
-provider "aws" {
-  region = "us-east-1"
-}
+            provider "aws" {
+              region = "us-east-1"
+            }
 
-resource "aws_instance" "mi_ec2" {
-  ami           = "ami-0c55b159cbfafe1f0"  # AMI de Amazon Linux 2
-  instance_type = "t2.micro"
+            resource "aws_instance" "mi_ec2" {
+              ami           = "ami-0c55b159cbfafe1f0"  # AMI de Amazon Linux 2
+              instance_type = "t2.micro"
 
-  tags = {
-    Name = "MiPrimerServidor"
-  }
-}
+              tags = {
+                Name = "MiPrimerServidor"
+              }
+            }
 
 2️⃣ Inicializar Terraform
 
