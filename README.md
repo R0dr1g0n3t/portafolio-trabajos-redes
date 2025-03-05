@@ -7,8 +7,8 @@ Esto es el paso a paso de como instalar, configurar y usar Terraform por medio d
 
 1️⃣ Clonar el Repositorio
 
-git clone https://github.com/R0dr1g0n3t/proyecto-terraform.git
-cd proyecto-terraform
+      git clone https://github.com/R0dr1g0n3t/proyecto-terraform.git
+      cd proyecto-terraform
 
 2️⃣ Configurar AWS CLI
 
@@ -75,6 +75,6 @@ Debería aparecer la instancia con el nombre "MiPrimerServidor".
 
 Si quieres eliminar la instancia EC2:
 
-terraform destroy
+      terraform destroy
 
 Confirma con yes para eliminar los recursos.
