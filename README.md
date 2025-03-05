@@ -1,5 +1,5 @@
 Este portafolio no sólo es un portafolio para exponer mis progresos y como trabajo en la plataforma Terraform unido con una instancia EC2 en AWS, sino también para aprender un poco de GitHub, ya que este es mi primer paso trabajando personalmente en esta plataforma, así que lo siento si me equivoco en algo. Jajaja.
-También hago este portafolio ya que, si alguien también tiene problemas al empezar en Terraform
+También hago este portafolio ya que, si alguien también tiene problemas al empezar en Terraform, puede revisar mi progreso o no sé.
 
 Esto es el paso a paso de como instalar, configurar y usar Terraform por medio de una instancia EC2 en AWS
 
